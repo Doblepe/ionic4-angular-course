@@ -17,6 +17,7 @@ export class PlaceAddPage implements OnInit {
   saveNewPlace(title: HTMLInputElement, imageURL: HTMLInputElement) {
     this.placesService.addPlace(title.value, imageURL.value);
     this.router.navigate(['/places']);
+    this.placesService.updatePlaces(title.value, imageURL.value);
   }
 
 }

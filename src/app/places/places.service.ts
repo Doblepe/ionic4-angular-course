@@ -50,5 +50,8 @@ export class PlacesService {
       id: this.places.length + 1 + ""
     });
   }
+  updatePlaces(title, imageURL){
+    this.places = this.places;
+  }
 
 }
